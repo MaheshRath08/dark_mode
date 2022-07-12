@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.main{
+    text-align: center;
+    width: 700px;
+    padding: 1.5rem;
+}
+.main >*{
+    margin: 1rem;    
+}
+table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+tr, td, th{
+    border: 1px solid black;
+    padding: 5px;
+}
+.input-container{
+    position: fixed;
+    right: 1rem;
+    top: 1rem;
+    display: flex;
+    font-weight: bold;
+    color: red;
+}
+input[type="checkbox"]{
+    width: 20px;    
+}
