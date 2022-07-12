@@ -9,6 +9,9 @@ body{
     justify-content: center;
     min-height: 100vh;
 }
+.dark{
+    background-color: black;
+}
 .main{
     text-align: center;
     width: 700px;
@@ -17,14 +20,8 @@ body{
 .main >*{
     margin: 1rem;    
 }
-table{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-tr, td, th{
-    border: 1px solid black;
-    padding: 5px;
+.main.light{
+    color: white;
 }
 .input-container{
     position: fixed;
