@@ -33,5 +33,32 @@ body{
     color: red;
 }
 input[type="checkbox"]{
-    width: 20px;    
+    position: relative;   
+    width: 60px;
+    height: 30px; 
+    -webkit-appearance: none;
+    background-color: rgb(51, 51, 51);
+    border-radius: 20px;
+    box-shadow: 0 0 10px gray;
+    outline: none;
+    transition: 0.4s background ease-in-out;
+}
+input[type="checkbox"]:checked{
+    background-color: white;
+}
+input[type="checkbox"]::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 30px;
+    height: 30px;
+    background-color: cyan;
+    border-radius: 20px;
+    box-shadow: 0 0 5px gray;
+    transform: scale(1.1);
+    transition: 0.3s left ease-in-out;
+}
+input[type="checkbox"]:checked::before{
+    left: 30px;
 }
