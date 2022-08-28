@@ -14,9 +14,11 @@ body{
     background-color: black;
 }
 .main{
-    text-align: center;
     width: 700px;
     padding: 1.5rem;
+}
+.main h1, .main h2{
+    text-align: center;
 }
 .main >*{
     margin: 1rem;    
